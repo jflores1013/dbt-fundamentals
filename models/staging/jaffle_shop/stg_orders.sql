@@ -10,4 +10,4 @@ with orders as (
 
 )
 
-select * from orders
+from{{ source('jaffle_shop', 'orders') }}

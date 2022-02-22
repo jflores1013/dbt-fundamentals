@@ -9,4 +9,4 @@ with customers as (
 
 )
 
-select * from customers
+from{{ source('jaffle_shop', 'customers') }}
